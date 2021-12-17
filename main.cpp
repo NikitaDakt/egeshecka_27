@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 void  min_sum_distance()
@@ -18,10 +18,18 @@ void  min_sum_distance()
     4) вместо вывода пары подсчитать сумму
     5) найти минимум среди сумм
     **/
+
+    int n;
+    cin >> n;
+    vector<int> numbers(n,0);
+    for (int i(0); i < n; i++)
+        cin >> numbers[i];
+    for (int i(0); i<n; i++)
+        cout << numbers[i] << " ";
 }
 
 int main()
 {
-    min_sum_distance()
+    min_sum_distance();
     return 0;
 }
