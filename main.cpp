@@ -18,7 +18,7 @@ void div_15()
         cin >> numbers[i];
     for (int j = 0; j < n; ++j)
         for (int i = j + 1; i < n; ++i)
-            cout << numbers[j] << ' ' << numbers[i] << endl;
+            cout << numbers[j] * numbers[i] << endl;
 }
 
 int main()
