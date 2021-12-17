@@ -19,7 +19,7 @@ void  min_sum_distance()
     5) найти минимум среди сумм
     **/
 
-    int n;
+    int n, sum_of_pairs = 0, min_sum = 2005;
     cin >> n;
     vector<int> numbers(n, 0);
     for (int i(0); i < n; i++)
@@ -27,7 +27,12 @@ void  min_sum_distance()
     for (int j(0); j<n-1; j++)
         for (int i(j+1); i<n; i++)
             if (i - j > 3)
-                cout << numbers[j] + numbers[i] << endl;
+            {
+                sum_of_pairs = numbers[j] + numbers[i];
+                if (sum_of_pairs < min_sum)
+                    min_sum = sum_of_pairs;
+            }
+    cout << min_sum;
 }
 
 int main()
