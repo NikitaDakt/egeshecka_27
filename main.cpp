@@ -14,10 +14,20 @@ void div_6()
      не делится ни на 2 ни на 3
      3) ответ n6 * n2 + n6 * n3 + n6 * no + n6*(n6-1) / 2 * n2 * n3
     */
+
+    int n6 = 0, n3 = 0, n2 = 0, no = 0;
+    int n = 0, cur = 0;
+    cin >> n;
+    for (int i (0); i<n; i++)
+    {
+        cin >> cur;
+        cout << cur << ' ';
+    }
+
 }
 
 int main()
 {
-    div_15();
+    div_6();
     return 0;
 }
