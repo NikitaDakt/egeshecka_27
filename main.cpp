@@ -20,7 +20,9 @@ void max_sum_div()
     cout << endl;
     for (int j(0); j<n-1; j++)
         for (int i(j+1); i<n; i++)
-            cout << numbers[j] + numbers[i]<< endl;
+            if ((numbers[j] + numbers[i]) % 2 != 0)
+                cout << numbers[j] + numbers[i]<< endl;
+
 }
 int main()
 {
