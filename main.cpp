@@ -20,7 +20,7 @@ void num_sum_min_distance_ineff()
     for (int i = 0; i < n; ++i)
         for (int j = i + 1; j < n; ++j)
         {
-            if (abs(i - j) > 6)
+            if ((abs(i - j) > 6) and ((numbers[i] + numbers[j]) % 33 == 0))
                 cout << numbers[i] << ' ' << numbers[j] << endl;
         }
 }
