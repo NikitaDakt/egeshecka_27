@@ -20,7 +20,7 @@ void num_sum_max_distance_ineff()
     for (int i = 0; i < n; ++i)
         for (int j = i + 1; j < n; ++j)
         {
-            if (abs(i - j) < 10)
+            if ((abs(i - j) < 10) and ((numbers[i] + numbers[j]) % 31 == 0))
                 cout << numbers[i] << ' ' << numbers[j] << endl;
         }
 }
