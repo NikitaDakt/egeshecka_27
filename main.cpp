@@ -19,7 +19,7 @@ void num_sum_multiple_distance_ineff()
     for (int i = 0; i < n; ++i)
         for (int j = i + 1; j < n; ++j)
         {
-            if (abs(i - j) % 7 == 0)
+            if (abs(i - j) % 7 == 0 and ((numbers[i] + numbers[j]) % 55 == 0))
                 cout << numbers[i] << ' ' << numbers[j] << endl;
         }
 }
